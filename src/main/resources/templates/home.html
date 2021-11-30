@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:th="http://www.thymeleaf.org" 
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="well">
+            <h1>Home Page</h1>
+        </div>
+    </header>
+    
+  <div class="container">
+        <div class="row" style="text-align: center; margin-top: 10%;">
+            <form action="/login" style="display: inline-block;">
+                <button class="btn btn-success btn-default" onclick="goLogin()">
+                    <span class="glyphicon glyphicon glyphicon-log-in"></span> Admin log in
+                </button>
+            </form>
+            <form action="/productView" style="display: inline-block;">
+                <button class="btn btn-success btn-default" onclick="goProduct()">
+                    <span class="glyphicon glyphicon glyphicon-list"></span> View Products
+                </button>
+            </form>           
+        </div>
+  </div>
+</body>
+
+</html>
